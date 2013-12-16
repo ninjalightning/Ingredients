@@ -5,3 +5,4 @@ package com.ninjalightning.ingredients;
  */
 public class IngredientsFragment {
 }
+//records a list view of available ingredients

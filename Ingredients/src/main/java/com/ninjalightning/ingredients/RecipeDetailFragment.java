@@ -5,3 +5,4 @@ package com.ninjalightning.ingredients;
  */
 public class RecipeDetailFragment {
 }
+//shows all info about selected recipe

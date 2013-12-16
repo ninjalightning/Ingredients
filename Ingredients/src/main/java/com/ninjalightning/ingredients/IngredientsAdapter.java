@@ -5,3 +5,4 @@ package com.ninjalightning.ingredients;
  */
 public class IngredientsAdapter {
 }
+//link Ingredients Fragment to Main Activity

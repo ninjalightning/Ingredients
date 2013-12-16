@@ -5,3 +5,4 @@ package com.ninjalightning.ingredients;
  */
 public class RecipeDetailAdapter {
 }
+//link Recipe Detail Fragment to Main Activity

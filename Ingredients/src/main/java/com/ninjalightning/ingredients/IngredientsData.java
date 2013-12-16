@@ -5,3 +5,4 @@ package com.ninjalightning.ingredients;
  */
 public class IngredientsData {
 }
+//stores Ingredients
