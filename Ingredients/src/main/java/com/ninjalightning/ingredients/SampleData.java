@@ -5,7 +5,7 @@ package com.ninjalightning.ingredients;
  */
 public class SampleData {
     static String[] Ingredients = {
-            "Avacado",
+            "Avocado",
             "Rice",
             "Beef",
             "Carrots",
@@ -15,6 +15,34 @@ public class SampleData {
             "Frogs"
 
     };
+
+    static IngredientsData[] ingredientsDatas = {
+            new IngredientsData("Avocado", 0),
+            new IngredientsData("Chicken", 1)
+    };
+
+    static RecipeData[] recipeData = {
+            new RecipeData("Dog,Cat,Baby","Cook them together" , "3 Days" ,"weirdstew"),
+            new RecipeData("Avocado, Rice, Beans","Slow cook them","2 Hours","myFavorite"),
+            new RecipeData("Noodles, Babies, Frogs","Simmer them", "Long time", "Magic Spell")
+    };
+
+    /*
+
+
+
+    String ingredientList =
+            "Avocado, Rice, Beans, Beef, Carrots, Noodles, Babies, Frogs," +
+            "Mango, Brown Rice, Quinoa, Cheese, Tomatoes, Corn, Spinach";
+    String Directions =
+            "mix, stir, dollop, sift, measure, pour, weigh, separate, fry, bake, " +
+             "boil, broil, saute, cut chop, dice, grill, low, medium, high";
+    String cookingTime =
+            "5m, 10m, 15m, 20m, 25m, 30m, 35m, 40m, 45m, 50m, 55m, 1h, 1.5h, 2h, 3h";
+    String imageName  =
+            "pizza, spaghetti, salad, sandwich, android";
+
+     */
 
     static String[] Recipes = {
             "Article One\n\nExcepteur pour-over occaecat squid biodiesel umami gastropub, nulla laborum salvia dreamcatcher fanny pack. Ullamco culpa retro ea, trust fund excepteur eiusmod direct trade banksy nisi lo-fi cray messenger bag. Nesciunt esse carles selvage put a bird on it gluten-free, wes anderson ut trust fund twee occupy viral. Laboris small batch scenester pork belly, leggings ut farm-to-table aliquip yr nostrud iphone viral next level. Craft beer dreamcatcher pinterest truffaut ethnic, authentic brunch. Esse single-origin coffee banksy do next level tempor. Velit synth dreamcatcher, magna shoreditch in american apparel messenger bag narwhal PBR ennui farm-to-table.",
