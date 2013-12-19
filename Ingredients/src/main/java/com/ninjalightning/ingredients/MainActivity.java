@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements IngredientsFragment.OnButtonClickedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,4 +47,12 @@ public class MainActivity extends Activity {
     }
 
 
+    @Override
+    public void onButtonClicked() {
+        RecipeListFragment recipeListFragment = new RecipeListFragment();
+        getFragmentManager().beginTransaction()
+                .addToBackStack(null)
+                .replace(R.id.container, recipeListFragment)
+                .commit();
+    }
 }
