@@ -34,9 +34,9 @@ public class SampleData {
     };
 
     static RecipeData[] recipeData = {
-            new RecipeData("Dog,Cat,Baby","Cook them together" , "3 Days" ,"weirdstewI","Weird Stew"),
+            new RecipeData("Dog,Cat,Rabbit","Cook them together" , "3 Days" ,"weirdstewI","Weird Stew"),
             new RecipeData("Avocado, Rice, Beans","Slow cook them","2 Hours","myFavoriteI","My Favorite"),
-            new RecipeData("Noodles, Babies, Frogs","Simmer them", "Long time", "Magic SpellI","Magic Spell")
+            new RecipeData("Spice, Dock, Frogs","Simmer them", "Long time", "Magic SpellI","Magic Spell")
     };
 
     /*
