@@ -49,8 +49,6 @@ public class IngredientsFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        view.findViewById(R.id.ingredients);
-
          IngredientsAdapter ingredientsAdapter = new IngredientsAdapter(getActivity(), R.layout.ingredient_row, SampleData.ingredientsDatas);
 
 

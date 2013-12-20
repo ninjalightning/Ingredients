@@ -7,4 +7,5 @@
     android:layout_weight="12"
     android:background="#337809"
     android:id="@+id/list">
+
 </ListView>

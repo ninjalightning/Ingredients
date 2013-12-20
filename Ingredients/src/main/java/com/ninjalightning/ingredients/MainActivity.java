@@ -3,6 +3,7 @@ package com.ninjalightning.ingredients;
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -11,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 
-public class MainActivity extends Activity implements IngredientsFragment.OnButtonClickedListener {
+public class MainActivity extends Activity implements IngredientsFragment.OnButtonClickedListener, RecipeListFragment.OnRecipeSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +25,6 @@ public class MainActivity extends Activity implements IngredientsFragment.OnButt
                     .commit();
         }
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -46,6 +46,24 @@ public class MainActivity extends Activity implements IngredientsFragment.OnButt
         return super.onOptionsItemSelected(item);
     }
 
+    public void onRecipeSelected(int position) {
+        // The user selected the headline of an article from the HeadlinesFragment
+
+
+        RecipeDetailFragment recipeDetailFragment = new RecipeDetailFragment();
+
+        Bundle args = new Bundle();
+        args.putInt(RecipeDetailFragment.ARG_POSITION, position);
+        recipeDetailFragment.setArguments(args);
+
+
+        getFragmentManager().beginTransaction()
+                .addToBackStack(null)
+                .replace(R.id.container, recipeDetailFragment)
+                .commit();
+
+
+    }
 
     @Override
     public void onButtonClicked() {

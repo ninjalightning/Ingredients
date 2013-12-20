@@ -2,6 +2,7 @@
 
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recipe_row"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -10,7 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Recipe"
-        android:textSize="@android:dimen/notification_large_icon_height"/>
+        android:textSize="33sp"
+        android:id="@+id/recipe_title"
+        android:layout_centerVertical="true"/>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

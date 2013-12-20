@@ -41,7 +41,7 @@ public class RecipeAdapter extends ArrayAdapter<RecipeData> {
             // construct an object that is an instance of PlaceHolder class
             holder = new PlaceHolder();
             // assign view location to object created above
-            holder.nameView = (TextView) row.findViewById(R.id.ingredient);
+            holder.nameView = (TextView) row.findViewById(R.id.recipe_title);
             //holder.imageView = (ImageView) row.findViewById(R.id.imageView);
             // use setTag() to place (holder) object into inflated row
             row.setTag(holder);
@@ -50,9 +50,9 @@ public class RecipeAdapter extends ArrayAdapter<RecipeData> {
             holder = (PlaceHolder) row.getTag();
         }
         // get data from array to reflect data
-        RecipeData ingredientsData = mData[position];
+        RecipeData recipeData = mData[position];
         // set view to reflect data we need to show
-       // holder.nameView.setText(recipeData.name);
+        holder.nameView.setText(recipeData.recipeTitle);
 
         //set the image for this particular row.
         //int resId = mContext.getResources().getIdentifier(ingredientsData.name, "drawable", mContext.getPackageName());

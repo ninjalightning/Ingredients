@@ -12,12 +12,14 @@ public class RecipeData {
     String Directions;
     String cookingTime;
     String imageName;
+    String recipeTitle;
 
-    public RecipeData(String ingredientList, String directions, String cookingTime, String imageName) {
+    public RecipeData(String ingredientList, String directions, String cookingTime, String imageName, String recipeTitle) {
         this.ingredientList = ingredientList;
         Directions = directions;
         this.cookingTime = cookingTime;
         this.imageName = imageName;
+        this.recipeTitle = recipeTitle;
     }
 }
 //stores recipes

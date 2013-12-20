@@ -12,19 +12,31 @@ public class SampleData {
             "Chicken",
             "Noodles",
             "Babies",
-            "Frogs"
+            "Frogs",
+            "Spirulina",
+            "Mushrooms"
 
     };
 
     static IngredientsData[] ingredientsDatas = {
             new IngredientsData("Avocado", 0),
-            new IngredientsData("Chicken", 1)
+            new IngredientsData("Chicken", 1),
+            new IngredientsData("Rice",2),
+            new IngredientsData("Beef",3),
+            new IngredientsData("Carrots",4),
+            new IngredientsData("Chicken",5),
+            new IngredientsData("Noodles",6),
+            new IngredientsData("Babies",7),
+            new IngredientsData("Frogs",8),
+            new IngredientsData("Spirulina",9),
+            new IngredientsData("Mushrooms",10),
+
     };
 
     static RecipeData[] recipeData = {
-            new RecipeData("Dog,Cat,Baby","Cook them together" , "3 Days" ,"weirdstew"),
-            new RecipeData("Avocado, Rice, Beans","Slow cook them","2 Hours","myFavorite"),
-            new RecipeData("Noodles, Babies, Frogs","Simmer them", "Long time", "Magic Spell")
+            new RecipeData("Dog,Cat,Baby","Cook them together" , "3 Days" ,"weirdstewI","Weird Stew"),
+            new RecipeData("Avocado, Rice, Beans","Slow cook them","2 Hours","myFavoriteI","My Favorite"),
+            new RecipeData("Noodles, Babies, Frogs","Simmer them", "Long time", "Magic SpellI","Magic Spell")
     };
 
     /*
