@@ -46,23 +46,37 @@ public class RecipeDetailFragment extends Fragment {
 
         mCurrentPosition = position;
 
+
+//      make an object called detailedRecipe of the data type RecipeData and assign its value through
+//      SampleData Class to a position in the RecipeData Array
         RecipeData detailedRecipe = SampleData.recipeData[position];
 
+//      used v as getView( )
         View v = getView();
 
+//     Make a TextView type object called whateverImReferringToView and assign its value using v.findViewById to refer to id'd TextView sections of the layout .xml
        TextView titleView = (TextView) v.findViewById(R.id.title);
+//     whateverImReferringToView calls the setText method on the detailedRecipe object
        titleView.setText(detailedRecipe.recipeTitle);
 
+
+//     set up a TextView object called whateverImReferringToView and assign its value using v.findViewById to refer to id'd TextView sections of the layout .xml
        TextView cookingTimeView = (TextView) v.findViewById(R.id.cooking_time);
+//     whateverImReferringToView calls the setText method on the detailedRecipe object
        cookingTimeView.setText(detailedRecipe.cookingTime);
 
+
+//     set up a TextView object called whateverImReferringToView and assign its value using v.findViewById to refer to id'd TextView sections of the layout .xml
        TextView ingredientsListView = (TextView) v.findViewById(R.id.ingredients_list);
+//     whateverImReferringToView calls the setText method on the detailedRecipe object
        ingredientsListView.setText(detailedRecipe.ingredientList);
 
-       TextView directionsView = (TextView) v.findViewById(R.id.directions_view);
-       directionsView.setText(detailedRecipe.directions);
 
-    }
+//     set up a TextView object called whateverImReferringToView and assign its value using v.findViewById to refer to id'd TextView sections of the layout .xml
+       TextView directionsView = (TextView) v.findViewById(R.id.directions_view);
+//     whateverImReferringToView calls the setText method on the detailedRecipe object
+       directionsView.setText(detailedRecipe.directions);
+}
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
