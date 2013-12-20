@@ -9,14 +9,14 @@ import android.media.Image;
 public class RecipeData {
 
     String ingredientList;
-    String Directions;
+    String directions;
     String cookingTime;
     String imageName;
     String recipeTitle;
 
     public RecipeData(String ingredientList, String directions, String cookingTime, String imageName, String recipeTitle) {
         this.ingredientList = ingredientList;
-        Directions = directions;
+        this.directions = directions;
         this.cookingTime = cookingTime;
         this.imageName = imageName;
         this.recipeTitle = recipeTitle;

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -42,12 +43,25 @@ public class RecipeDetailFragment extends Fragment {
     }
 
     public void updateRecipeDetailView(int position) {
+
+        mCurrentPosition = position;
+
+        RecipeData detailedRecipe = SampleData.recipeData[position];
+
         View v = getView();
 
-        //need to get the correct recipe based off selection
-        RelativeLayout recipe = (RelativeLayout) v;
-        recipe.(SampleData.RecipeData[position]);
-        mCurrentPosition = position;
+       TextView titleView = (TextView) v.findViewById(R.id.title);
+       titleView.setText(detailedRecipe.recipeTitle);
+
+       TextView cookingTimeView = (TextView) v.findViewById(R.id.cooking_time);
+       cookingTimeView.setText(detailedRecipe.cookingTime);
+
+       TextView ingredientsListView = (TextView) v.findViewById(R.id.ingredients_list);
+       ingredientsListView.setText(detailedRecipe.ingredientList);
+
+       TextView directionsView = (TextView) v.findViewById(R.id.directions_view);
+       directionsView.setText(detailedRecipe.directions);
+
     }
 
     @Override
